@@ -1,0 +1,187 @@
+/*Style de la page d'accueil*/
+*{
+    margin: 0px;
+    padding: 0;
+    font-family: verdana;
+}
+
+/*Definition de la charte */
+:root{
+    --blue : #030722;
+    --yellow : #C1973B;
+    --black : #333;
+    --allblack : #1F1F1F;
+    --brown : brown;
+    --white : white;
+    --gray : rgb(186, 181, 181);
+}
+
+/*Stylisation du Header */
+header{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    /* border: 1px solid var(--black); */
+    height: auto;
+}
+
+/* Stylisation de la barre noire*/
+.null{
+    width: 100%;
+    height: 20px;
+    background-color: var(--allblack);
+    margin-bottom: -10px;
+}
+
+/*Stylisation de la banniere*/
+.informations_kosrhot{
+    width: 100%;
+    /* height: auto; */
+    display: flex;
+    background-color: var(--blue);
+    color: var(--white);
+    margin-top: 0px;
+    border: none;
+    /* border: 1px solid var(--white) */
+}
+
+/*Stylisation info_kosrhot*/
+.info_kosrhot{
+    width: 80%;
+    height: auto;
+    margin: 0px;
+}
+.info_kosrhot ul{
+    list-style-type: none;
+    display: flex;
+    border: none;
+    margin-left: 50px;
+}
+
+.info_kosrhot ul li{
+    display: inline-block;
+    padding: 5px;
+    border: none;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 13px;
+}
+.info_kosrhot ul li i{
+    color: var(--yellow);
+}
+
+
+/* Stylisation des icones de RS*/
+.reseau_kosrhot{
+    width: 20%;
+    height: auto;
+}
+
+.reseau_kosrhot ul{
+    list-style-type: none;
+    display: flex;
+    border: none;
+    
+}
+
+.reseau_kosrhot ul li{
+    display: inline-block;
+    padding: 10px 0px;
+    border: none;
+    margin-top:8px;
+    margin-left: 40px;
+    width: 20%;
+    
+}
+
+/*Menu de navigation */
+.bar_navigation{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    border: 1px solid var(--allblack);
+    margin-bottom: 0px;
+}
+
+.mon_nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    /* text-decoration: none; */
+}
+.mon_nav ul li{
+    border: none;
+    margin-left: 50px;
+    padding: 40px 10px;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.mon_nav ul li a{
+    text-decoration: none;
+    color: var(--black);
+}
+.mon_nav ul li a:hover {
+    cursor: pointer;
+    background: var(--blue);
+    color: var(--white);
+    font-weight: bold;
+}
+.mon_nav ul li:hover ul {
+    display: block;
+    position: absolute;
+    left: 300;
+    width: 250px;
+    margin-top: 1rem;
+}
+
+.mon_nav ul li:hover ul li{
+    display: block;
+    background: var(--blue);
+    color: var(--white);
+    font-weight: bold;
+}
+.mon_nav ul li:hover ul li a{
+    color: var(--white);
+}
+.mon_nav img{
+    float: left;
+    margin-top: -15px;
+    border: none;
+}
+
+.mon_nav ul li ul{
+    display: none;
+    text-decoration: none;
+}
+
+
+
+
+
+/*Stylisation de la partie Section */
+.my_section{
+    width: 100%;
+    height: 500px;
+    /* border: 3px solid var(--brown); */
+}
+.my_section img{
+    width: 100%;
+    height: 110%;
+}
+.my_section ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.my_section ul li{
+    padding: 3px;
+    margin-top: -40px;
+}
+.my_section ul li i{
+    color: var(--yellow);
+}
+.my_section ul li .yellow{
+    color: var(--gray);
+}
